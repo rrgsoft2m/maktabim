@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+#news{
+  background-image: url('https://images.pexels.com/photos/5184961/pexels-photo-5184961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+    margin: auto;
+
+}
+
+#news h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Supermercado One', cursive;
+    font-weight: 700;
+
+}
+
+
+#news img{width: 100%;
+transition: .5s;  
+border-radius: 18px;
+    filter: grayscale(0);
+height: 100%;
+}
+#news .card:hover{
+background-color: white;
+transform: translateY(10px);
+    opacity: 100%;
+    color: black;
+    
+
+}
+
+#news .posts-main-container:hover img{
+filter:grayscale(1);
+transform: scale(1.2);
+
+}
+#news .card{
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;  
+    line-height: 1.5;
+  margin: 100px 0px 100px 0px ;
+  background-color: unset;
+  opacity: 95%;
+  border: 2px solid silver;
+  border-radius: 20px;
+
+ 
+}
+#news nav{
+    display: flex;
+    justify-content: center;
+
+}
+
+#news nav ul li {
+    font-size: 20px;
+}
+
+
+#news .category-title li{
+    padding: 0 10px;
+}
+#news .category-title span{
+    color: rgb(0, 0, 0);
+}
+
+
+#news .posts-main-container{
+   max-width: 350px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+#news .posts-main-container > div{
+    box-shadow: 0px 12px 22px  rgba(0, 0, 0, 0.64);
+}
+#news .post-img{
+    position: relative;
+    overflow: hidden;
+}
+#news .category-name{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+#news .posts-main-container .business .category-name{
+    background-color: #00a7ea;
+    transform: translateX(-100px);
+    transition: 0.5s;
+
+}
+#news .posts-main-container:hover .business .category-name{
+
+    transform: translateX(0px);
+}
+
+
+
+#news .post-content{
+    padding: 25px;
+}
+#news .post-content-top{
+    background: #80ced7;
+    color: #fff;
+
+    padding: 5px 0 5px 15px;
+}
+#news .post-content-top span{
+    padding-right: 20px;
+    font-size: 20px;
+}
+#news .post-content-top .fa-comment, .post-content-top .fa-calendar{
+    padding-right: 5px;
+}
+#news .post-content h2{
+    font-size: 22px;
+    padding: 12px 0;
+    color: black;
+    font-weight: 700;
+    
+}
+#news .post-content p{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.8;
+    color: black;
+}
+
+

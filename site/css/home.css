@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+#abaut .container .col-lg-12 h1 {
+    font-size: 30px;
+    margin-top: 100px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin-bottom: 80px;
+}
+
+#abaut .container .col-lg-12 .cards {
+    max-width: 900px;
+border-radius: 30px;
+    margin: auto;
+    animation: pop  10s linear infinite ;
+    min-height: 680px;
+
+}
+
+
+
+#abaut .container .col-lg-12 .cards p {
+    font-size: 25px;
+    display: flex;
+    margin-top: 10px;
+    color: #111;
+
+    margin: auto;
+    padding: 20px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+#abaut .container .col-lg-12 h1{
+    font-size: 40px;
+}
+#abaut .container .col-lg-12 .cards img {
+    display: flex !important;
+    margin: auto !important;
+    justify-content: center !important;
+    position: absolute;
+    margin: auto;
+    bottom: 20px;
+}
+
+#abaut {
+    background-image: url('https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+
+}
+
+
+
+@media(max-width:576px) {
+    #abaut .container .col-lg-12 h1 {
+        font-size: 20px;
+    }
+
+    #abaut .container .col-lg-12 .cards p {
+        font-size: 18px;
+    }
+
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
+#team-section {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232;
+    font-size: 15px;
+    overflow: hidden;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-image: url('https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -moz-font-smoothing: antialiased;
+}
+
+
+
+
+
+.team-member, .team-member .team-img,.team-img img {
+    position: relative;
+    transition: .5s ease;
+}
+
+.team-member {
+    overflow: hidden;
+    border-radius: 30px;
+  
+}
+
+
+.team-member:hover{
+    transform: translateY(-20px);
+}
+.team-member:hover .team-img img{
+filter: grayscale(1) !important;
+
+transform: scale(1.4);
+}
+
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.team-member:hover .team-hover .desk {
+    top: 35%;
+}
+
+
+
+.team-hover .desk {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    padding: 0 20px;
+}
+
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+
+.team-member:hover .team-hover .s-link {
+    bottom: 10%;
+}
+
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+
+.team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    font-size: 35px;
+}
+
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: white;
+}
+
+.team-member .s-link a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 25px;
+
+
+
+}
+.team-member .s-link a i{
+    transition: .5s;
+    color: rgb(255, 166, 0);
+}
+.team-member .s-link a:hover i {
+    color: rgb(255, 230, 0);
+    
+    text-shadow: 0px 0px 20px rgb(255, 230, 0);
+    transform: translateY(-15px);
+    
+}
+
+.team-title {
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.team-title span {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #020202;
+    font-weight: 700;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+margin-bottom: 100px;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    overflow-x: hidden
+}
+
+::selection {
+    background-color: rgb(255, 198, 11);
+  color: black;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #29323c;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f7f7f7;
+    border-radius: 0
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff
+}
+
+.info-slot:hover {
+    background-color: #222a68;
+    color: #fff;
+    border-radius: 4px;
+    transition: .5s
+}
+
+.info-slot:hover a {
+    color: #fff
+}
+
+#school .container-fluid .row .col-lg-12 .toggle{
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+#school .container-fluid .row .col-lg-6 .box{
+    overflow: hidden;
+    
+}
+#school .container-fluid .row .col-lg-6 .box img{
+    max-width: 100%;
+   min-height: 450px;
+    filter: grayscale(0);
+    transition: .5s  ease;
+    cursor:crosshair;
+  
+}#school .container-fluid .row .col-lg-12 .carousel ol li{
+   width: 15px;
+   height: 15px;
+    border-radius: 50%;
+}
+#school .container-fluid .row .col-lg-12 .carousel ol li:active{
+    transform: scale(1.1);
+}
+#school .container-fluid .row .col-lg-6 .box img:hover{
+    filter: grayscale(1);
+    transform: scale(1.2) rotate(5deg) ;
+}
+#school .container-fluid .row .col-lg-6 .box{
+    border-radius: 0px 15px 15px 0px;
+}
+#school .container-fluid .row .col-lg-6  .img_2{
+    border-radius: 15px 0px 0px 15px;
+}
+
+#school .container-fluid .row .col-lg-12 h1{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: rgb(0, 0, 0);
+}
+#school .container-fluid .row .col-lg-6 h1{
+    color: rgb(252, 214, 0);
+    font-size: 25px;
+    font-weight: 700;
+     font-family: 'Mochiy Pop P One', sans-serif;
+}
+#school .container-fluid .row .col-lg-6 p{
+    font-size:20px;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+    font-family: 'Mochiy Pop P One', sans-serif;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boshqaruv paneli - Maktab sayti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login -->
+  <section id="login-view" class="hidden">
+    <form id="login-form" class="login-box">
+      <h1>Maktab sayti</h1>
+      <p class="muted">Boshqaruv paneliga kirish</p>
+      <label>Login
+        <input name="username" autocomplete="username" required autofocus>
+      </label>
+      <label>Parol
+        <input type="password" name="password" autocomplete="current-password" required>
+      </label>
+      <button type="submit" class="primary wide">Kirish</button>
+      <p class="error" id="login-error"></p>
+    </form>
+  </section>
+
+  <!-- Asosiy panel -->
+  <section id="app-view" class="hidden">
+    <header class="topbar">
+      <strong>Maktab sayti - boshqaruv</strong>
+      <div class="spacer"></div>
+      <div id="lang-tabs" class="lang-tabs" title="Tahrirlash tili">
+        <button type="button" class="active" data-lang="uz">UZ</button>
+        <button type="button" data-lang="ru">RU</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a href="/" target="_blank" rel="noopener">Saytni ko'rish ↗</a>
+      <button id="btn-password" class="ghost" type="button">Parolni o'zgartirish</button>
+      <button id="btn-logout" class="ghost" type="button">Chiqish</button>
+    </header>
+
+    <div class="layout">
+      <aside>
+        <h3>Sahifalar</h3>
+        <ul id="page-list" class="page-list"></ul>
+      </aside>
+
+      <main>
+        <div class="main-head">
+          <div>
+            <h2 id="page-title">Sahifani tanlang</h2>
+            <p id="page-note" class="muted small">Har bir o'zgarish darhol saytda ko'rinadi.</p>
+          </div>
+          <div class="toolbar">
+            <input id="search" type="search" placeholder="Qidirish...">
+            <div id="filters" class="filters">
+              <button type="button" class="active" data-filter="all">Hammasi</button>
+              <button type="button" data-filter="text">Matn</button>
+              <button type="button" data-filter="image">Rasm</button>
+              <button type="button" data-filter="href">Havola</button>
+              <button type="button" data-filter="typed">Animatsiya</button>
+              <button type="button" data-filter="untranslated">Tarjima kerak</button>
+            </div>
+          </div>
+        </div>
+        <div id="blocks"></div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Rasm kutubxonasi -->
+  <dialog id="media-dialog">
+    <div class="dialog-head">
+      <h3>Rasm tanlang</h3>
+      <label class="upload-btn">
+        Yangi rasm yuklash
+        <input id="media-upload" type="file" accept="image/jpeg,image/png,image/gif,image/webp" hidden>
+      </label>
+    </div>
+    <p class="muted small">Rasmni bosing - u shu joyga qo'yiladi. Yuklangan rasmlarni o'chirish mumkin (saytda ishlatilmayotgan bo'lsa).</p>
+    <div id="media-grid" class="media-grid"></div>
+    <div class="dialog-foot">
+      <button type="button" class="ghost" data-close>Yopish</button>
+    </div>
+  </dialog>
+
+  <!-- Parolni o'zgartirish -->
+  <dialog id="password-dialog">
+    <form id="password-form">
+      <h3>Parolni o'zgartirish</h3>
+      <label>Joriy parol <input type="password" name="current" required autocomplete="current-password"></label>
+      <label>Yangi parol (kamida 8 belgi) <input type="password" name="newPassword" required minlength="8" autocomplete="new-password"></label>
+      <label>Yangi parolni takrorlang <input type="password" name="confirm" required minlength="8" autocomplete="new-password"></label>
+      <div class="dialog-foot">
+        <button type="button" class="ghost" data-close>Bekor qilish</button>
+        <button type="submit" class="primary">Saqlash</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
